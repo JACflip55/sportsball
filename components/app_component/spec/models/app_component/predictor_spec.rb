@@ -1,3 +1,7 @@
+require "action_controller"
+require_relative "../../../app/models/app_component/predictor.rb"
+
+
 RSpec.describe AppComponent::Predictor do
   before do
     @team1 = create_team name: "A"
