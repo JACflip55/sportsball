@@ -1,24 +1,32 @@
-$:.push File.expand_path("lib", __dir__)
+$:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
 require "app_component/version"
 
 # Describe your gem and declare its dependencies:
-Gem::Specification.new do |spec|
-  spec.name        = "app_component"
-  spec.version     = AppComponent::VERSION
-  spec.authors     = ["Jack"]
-  spec.email       = ["jack.carlson@ntrepidcorp.com"]
-  spec.summary     = "Summary of AppComponent."
-  spec.license     = "MIT"
+Gem::Specification.new do |s|
+  s.name        = "app_component"
+  s.version     = AppComponent::VERSION
+  s.authors     = ["Stephan Hagemann"]
+  s.email       = [""]
+  s.summary     = "Summary of AppComponent."
 
-  spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.0.2", ">= 6.0.2.1"
-  spec.add_dependency "slim-rails"
-  spec.add_dependency "trueskill"
+  s.add_dependency "rails"
+  s.add_dependency "slim-rails"
+  s.add_dependency "trueskill"
 
-  spec.add_development_dependency "sqlite3"
-  spec.add_development_dependency "rspec-rails"
-  spec.add_development_dependency "shoulda-matchers"
+  s.add_development_dependency "sqlite3"
+
+  s.add_dependency "jquery-rails"
+
+
+
+  s.add_development_dependency "rspec-rails"
+  s.add_development_dependency "shoulda-matchers"
+  s.add_development_dependency "database_cleaner"
+  s.add_development_dependency "capybara"
+  s.add_development_dependency "rails-controller-testing"
+
 end

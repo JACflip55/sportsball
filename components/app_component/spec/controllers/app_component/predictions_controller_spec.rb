@@ -1,6 +1,3 @@
-require "action_controller"
-require_relative "../../../app/controllers/app_component/application_controller.rb"
-require_relative "../../../app/controllers/app_component/predictions_controller.rb"
 
 RSpec.describe AppComponent::PredictionsController, :type => :controller do
   routes { AppComponent::Engine.routes }
@@ -24,9 +21,11 @@ RSpec.describe AppComponent::PredictionsController, :type => :controller do
            session: {}
 
       prediction = assigns(:prediction)
-      expect(prediction).to be_a AppComponent::Prediction
+      expect(prediction).to be_a ::Predictor::Prediction
       expect(prediction.first_team).to eq @team1
       expect(prediction.second_team).to eq @team2
     end
   end
 end
+
+

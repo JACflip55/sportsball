@@ -1,3 +1,4 @@
+
 module AppComponent
   class Game < ApplicationRecord
     validates :date, :location, :first_team, :second_team, :winning_team,
@@ -6,3 +7,4 @@ module AppComponent
     belongs_to :second_team, class_name: "AppComponent::Team"
   end
 end
+

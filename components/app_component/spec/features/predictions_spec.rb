@@ -23,3 +23,4 @@ RSpec.describe "the prediction process", :type => :feature do
     expect(page).to have_content "the winner will be UofL"
   end
 end
+

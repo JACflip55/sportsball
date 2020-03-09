@@ -1,7 +1,3 @@
-require 'active_record'
-require_relative "../../../app/models/app_component/application_record.rb"
-require_relative "../../../app/models/app_component/game.rb"
-
 
 RSpec.describe AppComponent::Game do
   it { should validate_presence_of :date }
@@ -15,3 +11,4 @@ RSpec.describe AppComponent::Game do
   it { should belong_to :first_team}
   it { should belong_to :second_team}
 end
+

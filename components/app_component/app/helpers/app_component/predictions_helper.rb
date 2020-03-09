@@ -1,3 +1,4 @@
+
 module AppComponent
   module PredictionsHelper
     def prediction_text(team1, team2, winner)
@@ -6,3 +7,4 @@ module AppComponent
     end
   end
 end
+

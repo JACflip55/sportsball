@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 exit_code=0
@@ -19,3 +20,4 @@ bundle exec rspec spec
 unset BUNDLE_GEMFILE
 
 exit $exit_code
+

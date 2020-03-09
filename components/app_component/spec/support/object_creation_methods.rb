@@ -1,3 +1,4 @@
+
 module ObjectCreationMethods
   def new_team(overrides = {})
     defaults = {

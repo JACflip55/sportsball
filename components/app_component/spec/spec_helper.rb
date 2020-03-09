@@ -1,6 +1,7 @@
+
 ENV["RAILS_ENV"] ||= "test"
 
-require File.expand_path("/Users/jack.carlson/Work/code/sportsball/components/app_component/test/dummy/config/environment", __FILE__)
+require File.expand_path("../dummy/config/environment", __FILE__)
 
 require "rspec/rails"
 require "shoulda/matchers"
@@ -55,3 +56,4 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+

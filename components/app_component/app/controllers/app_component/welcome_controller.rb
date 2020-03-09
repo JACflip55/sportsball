@@ -1,8 +1,9 @@
-require_dependency "app_component/application_controller"
 
+require_dependency "app_component/application_controller"
 module AppComponent
   class WelcomeController < ApplicationController
-    def index
+    def show
     end
   end
 end
+

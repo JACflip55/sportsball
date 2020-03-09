@@ -17,13 +17,16 @@ ruby:
     = f.text_field :location
   .field
     = f.label :first_team_id
-    = f.collection_select(:first_team_id, @teams, :id, :name)
+    = f.number_field :first_team_id
+    //= f.collection_select(:first_team_id, @teams, :id, :name)
   .field
     = f.label :second_team_id
-    = f.collection_select(:second_team_id, @teams, :id, :name)
+    = f.number_field :second_team_id
+    //= f.collection_select(:second_team_id, @teams, :id, :name)
   .field
     = f.label :winning_team
-    = f.collection_select(:winning_team, @teams, :id, :name)
+    = f.number_field :winning_team
+    //= f.collection_select(:winning_team, @teams, :id, :name)
   .field
     = f.label :first_team_score
     = f.number_field :first_team_score

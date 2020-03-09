@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 result=0
@@ -18,3 +19,4 @@ else
 fi
 
 exit $result
+
